@@ -1,4 +1,4 @@
-#+title: Medi Manage
+#+title: Project सत्त्र
 
 * [[https://github.com/SabFaltu/Medi_manage/tree/Tester][Test Zone]]
 

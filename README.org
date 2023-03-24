@@ -1,61 +1,33 @@
 #+title: Project सत्त्र
 
-* [[https://github.com/SabFaltu/Medi_manage/tree/Tester][Test Zone]]
-
-* Group Definition
+* Group Members
 ** Ashim :creative:
-  + Current Objective: Presentation for Execs
+  + Current Objective: Flutter Design
 ** Aditi :creative:
-  + Current Objective: Documenting a "About us and why"
+  + Current Objective: Animation and Typography
 ** Bhargav :Creative:
-  + Current Objective: Framework / Wireframe
-** Saksham :Dev:
-  + Current Objective: Learn Flutter
+  + Current Objective: Presentation Site
+** Dheraj :Dev:
+  + Current Objective: Flutter Development
 ** Saksham :Professional Idiot:
-  + Current Objective: Survive
+  + Current Objective: Database and Flutter Development
+
 
 * Resources
 ** Textual Resources
 ** Video Resources
-- [[https://www.youtube.com/watch?v=nyvwx7o277U][Resource]]
+- [[youtube:nyvwx7o277U][Routing and Navigation in Flutter]]
+- [[youtube:bee2AHQpGK4][Windows Navigation Panels]]
 
-* Testing Data
-** Patient Info
+** Fonts and Icons
 
-| Info             | Type                           |
-| ---------------- | ------------------------------ |
-| Name             | text                           |
-| Age              | Number                         |
-| Sex              | toggle                         |
-| Weight           | Number                         |
-| Address          | text                           |
-| Chief Complaints | text                           |
------------------------------------------------------
-| Symptom          | Level                          |
-| ------------     | ------------------------------ |
-| sleep            | normal, disrupted, heavy       |
-| bowel            | normal, constipation, frequent |
-| Appetite         | normal, disrupted, heavy       |
-| Digestion        | normal, poor, heavy            |
-| stress           | normal, heavy, poor            |
-| Micturition      | normal, frequent, low          |
-| Tolerance        | normal, hot, cold              |
-| Mensturation     | normal, Scanty, heavy          |
-| LMP              | Date                           |
+*** Fonts
+- [[https:fonts.google.com/specimen/Kalam?subset=devanagari&noto.script=Deva][Kalam, Devnagri Font]]
+- Seoge UI
 
-** Medications
+**** Setting the font in Flutter
+- [[https:stackoverflow.com/questions/50081213/how-to-change-the-default-font-in-flutter][Stackoverflow, Changing default font in Flutter]]
+- [[https:stackoverflow.com/questions/71182566/how-to-set-different-fonts-for-different-locales-in-flutter][Stackoverflow, Different fonts for different locales]]
 
-| Med                   | Dose                 |
-| --------------------- | -------------------- |
-| Adhya Tablet          | OD, BD, Hs, TDS, EOD |
-| Awipatti Tablet       | OD, BD, Hs, TDS, EOD |
-| Madhuparni Tablet     | OD, BD, Hs, TDS, EOD |
-| Lekhniya Tablet       | OD, BD, Hs, TDS, EOD |
-| Vrahkarni Tablet      | OD, BD, Hs, TDS, EOD |
-| Rakta Shodak Tablet   | OD, BD, Hs, TDS, EOD |
-| Medhya Rasayan Tablet | OD, BD, Hs, TDS, EOD |
-| Calvera Tablet        | OD, BD, Hs, TDS, EOD |
-| Punarnava Capsule     | OD, BD, Hs, TDS, EOD |
-| Maarkhav Capsule      | OD, BD, Hs, TDS, EOD |
-| Cystolve Tablet       | OD, BD, Hs, TDS, EOD |
-| Cystolve Capsule      | OD, BD, Hs, TDS, EOD |
+*** Icons
+- [[https:learn.microsoft.com/en-us/windows/apps/design/style/icons][Microsoft Icons, Windows 10]]

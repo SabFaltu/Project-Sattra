@@ -1,15 +1,15 @@
 #+title: Project सत्त्र
 
 * Group Members
-** Ashim :creative:
+- Ashim
   + Current Objective: Flutter Design
-** Aditi :creative:
+- Aditi
   + Current Objective: Animation and Typography
-** Bhargav :Creative:
+- Bhargav
   + Current Objective: Presentation Site
-** Dheraj :Dev:
+- Dheraj
   + Current Objective: Flutter Development
-** Saksham :Professional Idiot:
+- Saksham
   + Current Objective: Database and Flutter Development
 
 

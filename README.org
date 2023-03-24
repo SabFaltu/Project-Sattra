@@ -1,33 +1,31 @@
 #+title: Project सत्त्र
 
 * Group Members
-- Ashim
-  + Current Objective: Flutter Design
-- Aditi
-  + Current Objective: Animation and Typography
-- Bhargav
-  + Current Objective: Presentation Site
-- Dheraj
-  + Current Objective: Flutter Development
-- Saksham
-  + Current Objective: Database and Flutter Development
+| Members | Objective                        |
+| Ashim   | Flutter Design                   |
+| Aditi   | Animation and Typography         |
+| Bhargav | Presentation Site                |
+| Dheraj  | Flutter Development              |
+| Saksham | Database and Flutter Development |
 
 
 * Resources
 ** Textual Resources
+- [[github:bdlukaa/fluent_ui][Fluent_UI by bdlukaa]]
+- [[https:pub.dev/packages/fluentui_system_icons][fluentui_system_icons by Microsoft]]
+- [[https:docs.flutter.dev/cookbook/navigation/navigation-basics][Basic Page navigation]]
 ** Video Resources
-- [[youtube:nyvwx7o277U][Routing and Navigation in Flutter]]
-- [[youtube:bee2AHQpGK4][Windows Navigation Panels]]
+- [[https:youtu.be/nyvwx7o277U][Routing and Navigation in Flutter]]
+- [[https:youtu.be/bee2AHQpGK4][Windows Navigation Panels]]
+- [[https:youtu.be/Mt41FpSS-Vo][File Structure Layout]]
 
 ** Fonts and Icons
-
 *** Fonts
-- [[https:fonts.google.com/specimen/Kalam?subset=devanagari&noto.script=Deva][Kalam, Devnagri Font]]
-- Seoge UI
+- [[https:fonts.google.com/specimen/Kalam?subset=devanagari&noto.script=Deva][Kalam, by Indian Type Foundry]]
+- Seoge UI, by Simon Daniels
 
 **** Setting the font in Flutter
 - [[https:stackoverflow.com/questions/50081213/how-to-change-the-default-font-in-flutter][Stackoverflow, Changing default font in Flutter]]
 - [[https:stackoverflow.com/questions/71182566/how-to-set-different-fonts-for-different-locales-in-flutter][Stackoverflow, Different fonts for different locales]]
-
 *** Icons
 - [[https:learn.microsoft.com/en-us/windows/apps/design/style/icons][Microsoft Icons, Windows 10]]

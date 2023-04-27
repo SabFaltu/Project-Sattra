@@ -1,13 +1,5 @@
 #+title: Project सत्त्र
 
-* Group Members
-| Members | Objective                        |
-| Ashim   | Flutter Design                   |
-| Aditi   | Animation and Typography         |
-| Bhargav | Presentation Site                |
-| Dheraj  | Flutter Development              |
-| Saksham | Database and Flutter Development |
-
 
 * Resources
 ** Textual Resources

@@ -1,4 +1,3 @@
-import '/widgets/card_highlight.dart';
 import '/widgets/page.dart';
 import 'package:fluent_ui/fluent_ui.dart';
 
@@ -36,61 +35,8 @@ class _SliderPageState extends State<SliderPage> with PageMixin {
           'the value to 2 or 5.',
         ),
         subtitle(content: const Text('A simple Slider')),
-        CardHighlight(
-          child: Row(children: [
-            Slider(
-              label: '${firstValue.toInt()}',
-              value: firstValue,
-              onChanged: disabled
-                  ? null
-                  : (v) {
-                      setState(() => firstValue = v);
-                    },
-            ),
-            const Spacer(),
-            Text('Output:\n${firstValue.toInt()}'),
-          ]),
-          codeSnippet: '''double value = 0;
-
-Slider(
-  label: '\${value.toInt()}',
-  value: value,
-  onChanged: disabled ? null : (v) => setState(() => value = v),
-),
-''',
-        ),
-        subtitle(content: const Text('A vertical slider')),
         description(
-          content: const Text(
-            '''You can orient your slider horizontally or vertically. Use these guidelines to determine which layout to use.
-
-    *   Use a natural orientation. For example, if the slider represents a real-world value that is normally shown vertically (such as temperature), use a vertical orientation.
-    *   If the control is used to seek within media, like in a video app, use a horizontal orientation.
-    *   When using a slider in page that can be panned in one direction (horizontally or vertically), use a different orientation for the slider than the panning direction. Otherwise, users might swipe the slider and change its value accidentally when they try to pan the page.
-    *   If you're still not sure which orientation to use, use the one that best fits your page layout.''',
-          ),
-        ),
-        CardHighlight(
-          child: Row(children: [
-            Slider(
-              vertical: true,
-              label: '${verticalValue.toInt()}',
-              value: verticalValue,
-              onChanged:
-                  disabled ? null : (v) => setState(() => verticalValue = v),
-            ),
-            const Spacer(),
-            Text('Output:\n${verticalValue.toInt()}'),
-          ]),
-          codeSnippet: '''double value = 0;
-
-Slider(
-  vertical: true,
-  label: '\${value.toInt()}',
-  value: value,
-  onChanged: disabled ? null : (v) => setState(() => value = v),
-),
-''',
+          content: const Text('A slider that can be used to set a value.'),
         ),
       ],
     );

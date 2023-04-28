@@ -1,4 +1,4 @@
-export '../screens/inputs/button.dart';
-export '../screens/inputs/checkbox.dart';
-export '../screens/inputs/slider.dart';
-export '../screens/inputs/toggle_switch.dart';
+export '../screens/view/button.dart';
+export '../screens/view/checkbox.dart';
+export '../screens/view/slider.dart';
+export '../screens/view/toggle_switch.dart';

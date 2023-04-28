@@ -149,48 +149,48 @@ class _MyHomePageState extends State<MyHomePage> with WindowListener {
         if (router.location != '/') router.pushNamed('home');
       },
     ),
-    PaneItemHeader(header: const Text('Inputs')),
+//    PaneItemHeader(header: const Text('Inputs')),
     PaneItem(
-      key: const Key('/inputs/buttons'),
+      key: const Key('/view/buttons'),
       icon: const Icon(FluentIcons.button_control),
       title: const Text('Button'),
       body: const SizedBox.shrink(),
       onTap: () {
-        if (router.location != '/inputs/buttons') {
-          router.pushNamed('inputs_buttons');
+        if (router.location != '/view/buttons') {
+          router.pushNamed('view_buttons');
         }
       },
     ),
     PaneItem(
-      key: const Key('/inputs/checkbox'),
+      key: const Key('/view/checkbox'),
       icon: const Icon(FluentIcons.checkbox_composite),
       title: const Text('Checkbox'),
       body: const SizedBox.shrink(),
       onTap: () {
-        if (router.location != '/inputs/checkbox') {
-          router.pushNamed('inputs_checkbox');
+        if (router.location != '/view/checkbox') {
+          router.pushNamed('view_checkbox');
         }
       },
     ),
     PaneItem(
-      key: const Key('/inputs/slider'),
+      key: const Key('/view/slider'),
       icon: const Icon(FluentIcons.slider),
       title: const Text('Slider'),
       body: const SizedBox.shrink(),
       onTap: () {
-        if (router.location != '/inputs/slider') {
-          router.pushNamed('inputs_slider');
+        if (router.location != '/view/slider') {
+          router.pushNamed('view_slider');
         }
       },
     ),
     PaneItem(
-      key: const Key('/inputs/toggle_switch'),
+      key: const Key('/view/toggle_switch'),
       icon: const Icon(FluentIcons.toggle_left),
       title: const Text('ToggleSwitch'),
       body: const SizedBox.shrink(),
       onTap: () {
-        if (router.location != '/inputs/toggle_switch') {
-          router.pushNamed('inputs_toggle_switch');
+        if (router.location != '/view/toggle_switch') {
+          router.pushNamed('view_toggle_switch');
         }
       },
     ),
@@ -463,8 +463,8 @@ final router = GoRouter(
         /// /// Input
         /// Buttons
         GoRoute(
-          path: '/inputs/buttons',
-          name: 'inputs_buttons',
+          path: '/view/buttons',
+          name: 'view_buttons',
           builder: (context, state) => DeferredWidget(
             inputs.loadLibrary,
             () => inputs.ButtonPage(),
@@ -473,8 +473,8 @@ final router = GoRouter(
 
         /// Checkbox
         GoRoute(
-          path: '/inputs/checkbox',
-          name: 'inputs_checkbox',
+          path: '/view/checkbox',
+          name: 'view_checkbox',
           builder: (context, state) => DeferredWidget(
             inputs.loadLibrary,
             () => inputs.CheckBoxPage(),
@@ -483,8 +483,8 @@ final router = GoRouter(
 
         /// Slider
         GoRoute(
-          path: '/inputs/slider',
-          name: 'inputs_slider',
+          path: '/view/slider',
+          name: 'view_slider',
           builder: (context, state) => DeferredWidget(
             inputs.loadLibrary,
             () => inputs.SliderPage(),
@@ -493,8 +493,8 @@ final router = GoRouter(
 
         /// ToggleSwitch
         GoRoute(
-          path: '/inputs/toggle_switch',
-          name: 'inputs_toggle_switch',
+          path: '/view/toggle_switch',
+          name: 'view_toggle_switch',
           builder: (context, state) => DeferredWidget(
             inputs.loadLibrary,
             () => inputs.ToggleSwitchPage(),

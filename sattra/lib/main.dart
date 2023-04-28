@@ -33,7 +33,7 @@ void main() async {
   if (!kIsWeb &&
       [
         TargetPlatform.windows,
-        TargetPlatform.android,
+        TargetPlatform.linux,
       ].contains(defaultTargetPlatform)) {
     SystemTheme.accentColor.load();
   }

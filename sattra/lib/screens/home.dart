@@ -1,5 +1,4 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:url_launcher/link.dart';
 
 import '../widgets/material_equivalents.dart';
 import '../widgets/page.dart';
@@ -41,7 +40,7 @@ class _HomePageState extends State<HomePage> with PageMixin {
                 label: 'Forms',
                 child: ComboBox<String>(
                   value: comboboxValue,
-                  items: ['Item 1', 'Item 2']
+                  items: ['Item 1', 'Item 2', 'Sugma']
                       .map((e) => ComboBoxItem(
                             child: Text(e),
                             value: e,
@@ -54,7 +53,7 @@ class _HomePageState extends State<HomePage> with PageMixin {
             ),
             RepaintBoundary(
               child: Padding(
-                padding: const EdgeInsetsDirectional.only(start: 4.0),
+                padding: const EdgeInsetsDirectional.only(start: 6.9),
                 child: InfoLabel(
                   label: 'Progress',
                   child: const SizedBox(
@@ -130,33 +129,5 @@ class _HomePageState extends State<HomePage> with PageMixin {
         const MaterialEquivalents(),
       ],
     );
-  }
-}
-
-class SponsorButton extends StatelessWidget {
-  const SponsorButton({
-    Key? key,
-    required this.imageUrl,
-    required this.username,
-  }) : super(key: key);
-
-  final String imageUrl;
-  final String username;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(children: [
-      Container(
-        height: 60,
-        width: 60,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: NetworkImage(imageUrl),
-          ),
-          shape: BoxShape.circle,
-        ),
-      ),
-      Text(username),
-    ]);
   }
 }

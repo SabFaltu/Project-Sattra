@@ -11,7 +11,7 @@ import 'package:system_theme/system_theme.dart';
 //import 'package:url_launcher/link.dart';
 import 'package:window_manager/window_manager.dart';
 
-import 'routes/inputs.dart' deferred as inputs;
+import 'routes/screens.dart' deferred as inputs;
 import 'widgets/deferred_widget.dart';
 
 const String appTitle = 'Win UI for Sattra';

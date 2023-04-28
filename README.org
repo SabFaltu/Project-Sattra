@@ -22,4 +22,4 @@
 *** Icons
 - [[https:learn.microsoft.com/en-us/windows/apps/design/style/icons][Microsoft Icons, Windows 10]]
 ** Packages
-- [[https:api.flutter.dev/flutter/material/FlutterLogo-class.html][FlutterLogo class]]
+- [[https:api.flutter.dev/flutter/material/FlutterLogo-class.html][FlutterLogo class]] - Replace with your own icon

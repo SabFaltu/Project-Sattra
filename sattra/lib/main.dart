@@ -150,21 +150,23 @@ class _MyHomePageState extends State<MyHomePage> with WindowListener {
       },
     ),
 //    PaneItemHeader(header: const Text('screens')),
+    PaneItemHeader(header: const Text('Management')), // Header
     PaneItem(
       key: const Key('/view/buttons'),
-      icon: const Icon(FluentIcons.button_control),
-      title: const Text('Button'),
+      icon: const Icon(FluentIcons.people),
+      title: const Text('Patients'),
       body: const SizedBox.shrink(),
       onTap: () {
         if (router.location != '/view/buttons') {
-          router.pushNamed('view_buttons');
-        }
+          //? If not here
+          router.pushNamed('view_buttons'); //? Go here
+        } //? Possible routes in the end
       },
     ),
     PaneItem(
       key: const Key('/view/checkbox'),
-      icon: const Icon(FluentIcons.checkbox_composite),
-      title: const Text('Checkbox'),
+      icon: const Icon(FluentIcons.health_solid),
+      title: const Text('Medicines'),
       body: const SizedBox.shrink(),
       onTap: () {
         if (router.location != '/view/checkbox') {
@@ -174,8 +176,8 @@ class _MyHomePageState extends State<MyHomePage> with WindowListener {
     ),
     PaneItem(
       key: const Key('/view/slider'),
-      icon: const Icon(FluentIcons.slider),
-      title: const Text('Slider'),
+      icon: const Icon(FluentIcons.calendar),
+      title: const Text('Appointments'),
       body: const SizedBox.shrink(),
       onTap: () {
         if (router.location != '/view/slider') {
@@ -183,10 +185,11 @@ class _MyHomePageState extends State<MyHomePage> with WindowListener {
         }
       },
     ),
+    PaneItemHeader(header: const Text('Syncing')),
     PaneItem(
       key: const Key('/view/toggle_switch'),
-      icon: const Icon(FluentIcons.toggle_left),
-      title: const Text('ToggleSwitch'),
+      icon: const Icon(FluentIcons.cloud_upload),
+      title: const Text('Storage'),
       body: const SizedBox.shrink(),
       onTap: () {
         if (router.location != '/view/toggle_switch') {
@@ -434,6 +437,7 @@ class WindowButtons extends StatelessWidget {
 
 final rootNavigatorKey = GlobalKey<NavigatorState>();
 final _shellNavigatorKey = GlobalKey<NavigatorState>();
+// Everywhere you can go
 final router = GoRouter(
   navigatorKey: rootNavigatorKey,
   routes: [

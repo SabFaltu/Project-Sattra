@@ -11,7 +11,7 @@ import 'package:system_theme/system_theme.dart';
 //import 'package:url_launcher/link.dart';
 import 'package:window_manager/window_manager.dart';
 
-import 'routes/screens.dart' deferred as inputs;
+import 'routes/screens.dart' deferred as screens;
 import 'widgets/deferred_widget.dart';
 
 const String appTitle = 'Win UI for Sattra';
@@ -57,7 +57,7 @@ void main() async {
   runApp(const MyApp());
 
   Future.wait([
-    DeferredWidget.preload(inputs.loadLibrary),
+    DeferredWidget.preload(screens.loadLibrary),
   ]);
 }
 
@@ -149,7 +149,7 @@ class _MyHomePageState extends State<MyHomePage> with WindowListener {
         if (router.location != '/') router.pushNamed('home');
       },
     ),
-//    PaneItemHeader(header: const Text('Inputs')),
+//    PaneItemHeader(header: const Text('screens')),
     PaneItem(
       key: const Key('/view/buttons'),
       icon: const Icon(FluentIcons.button_control),
@@ -263,6 +263,7 @@ class _MyHomePageState extends State<MyHomePage> with WindowListener {
       appBar: NavigationAppBar(
         automaticallyImplyLeading: false,
         leading: () {
+          //! Controlls the Back button
           final enabled = widget.shellContext != null && router.canPop();
 
           final onPressed = enabled
@@ -466,8 +467,8 @@ final router = GoRouter(
           path: '/view/buttons',
           name: 'view_buttons',
           builder: (context, state) => DeferredWidget(
-            inputs.loadLibrary,
-            () => inputs.ButtonPage(),
+            screens.loadLibrary,
+            () => screens.ButtonPage(),
           ),
         ),
 
@@ -476,8 +477,8 @@ final router = GoRouter(
           path: '/view/checkbox',
           name: 'view_checkbox',
           builder: (context, state) => DeferredWidget(
-            inputs.loadLibrary,
-            () => inputs.CheckBoxPage(),
+            screens.loadLibrary,
+            () => screens.CheckBoxPage(),
           ),
         ),
 
@@ -486,8 +487,8 @@ final router = GoRouter(
           path: '/view/slider',
           name: 'view_slider',
           builder: (context, state) => DeferredWidget(
-            inputs.loadLibrary,
-            () => inputs.SliderPage(),
+            screens.loadLibrary,
+            () => screens.SliderPage(),
           ),
         ),
 
@@ -496,8 +497,8 @@ final router = GoRouter(
           path: '/view/toggle_switch',
           name: 'view_toggle_switch',
           builder: (context, state) => DeferredWidget(
-            inputs.loadLibrary,
-            () => inputs.ToggleSwitchPage(),
+            screens.loadLibrary,
+            () => screens.ToggleSwitchPage(),
           ),
         ),
       ],

@@ -1,5 +1,16 @@
-#+title: Project सत्त्र
+#+title: Project सत्र -  Dev Branch
 
+[[https://github.com/SabFaltu/Project-Sattra][Visit Main Branch]]
+
+* Overview
+This is the development branch for the Satra medical management application. It is currently in active development and is not recommended for production use.
+
+* Current Condition
+Noone but me works on this project.
+The only other functional person is the one who calls the panelists and keeps track of phases.
+Every word document was and is mine, hello, panelist who can see this.
+
+Saksham Sharma, 22BIS70051
 
 * Resources
 ** Textual Resources
@@ -8,7 +19,6 @@
 - [[https:docs.flutter.dev/cookbook/navigation/navigation-basics][Basic Page navigation]]
 ** Video Resources
 - [[https:youtu.be/nyvwx7o277U][Routing and Navigation in Flutter]]
-- [[https:youtu.be/bee2AHQpGK4][Windows Navigation Panels]]
 - [[https:youtu.be/Mt41FpSS-Vo][File Structure Layout]]
 
 ** Fonts and Icons

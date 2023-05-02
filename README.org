@@ -7,7 +7,9 @@ This is the development branch for the Satra medical management application. It 
 
 * Current Condition
 Noone but me works on this project.
+
 The only other functional person is the one who calls the panelists and keeps track of phases.
+
 Every word document was and is mine, hello, panelist who can see this.
 
 Saksham Sharma, 22BIS70051

@@ -1,4 +1,4 @@
-export '../screens/view/button.dart';
-export '../screens/view/checkbox.dart';
-export '../screens/view/slider.dart';
-export '../screens/view/toggle_switch.dart';
+export '../screens/view/patient.dart';
+export '../screens/view/medicine.dart';
+export '../screens/view/appointment.dart';
+export '../screens/view/storage.dart';

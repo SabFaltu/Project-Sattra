@@ -1,16 +1,36 @@
 # sattra
 
-A new Flutter project.
+A medical management project.
 
-## Getting Started
+## Current data points
 
-This project is a starting point for a Flutter application.
+| Info             | Type   |
+| ---------------- | ------ |
+| Name             | text   |
+| Age              | Number |
+| Sex              | toggle |
+| Weight           | Number |
+| Address          | text   |
+| Chief Complaints | text   |
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+| Symptom      | Level                          |
+| ------------ | ------------------------------ |
+| sleep        | normal, disrupted, heavy       |
+| bowel        | normal, constipation, frequent |
+| Appetite     | normal, disrupted, heavy       |
+| Digestion    | normal, poor, heavy            |
+| stress       | normal, heavy, poor            |
+| Micturition  | normal, frequent, low          |
+| Tolerance    | normal, hot, cold              |
+| Mensturation | normal, Scanty, heavy          |
+| LMP          | Date                           |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## PostgreSQL
+
+Offline under dev
+
+## Supabase
+
+Refer to dashboard

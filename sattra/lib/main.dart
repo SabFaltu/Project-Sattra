@@ -152,48 +152,48 @@ class _MyHomePageState extends State<MyHomePage> with WindowListener {
 //    PaneItemHeader(header: const Text('screens')),
     PaneItemHeader(header: const Text('Management')), // Header
     PaneItem(
-      key: const Key('/view/buttons'),
+      key: const Key('/view/patient'),
       icon: const Icon(FluentIcons.people),
       title: const Text('Patients'),
       body: const SizedBox.shrink(),
       onTap: () {
-        if (router.location != '/view/buttons') {
+        if (router.location != '/view/patient') {
           //? If not here
-          router.pushNamed('view_buttons'); //? Go here
+          router.pushNamed('view_patient'); //? Go here
         } //? Possible routes in the end
       },
     ),
     PaneItem(
-      key: const Key('/view/checkbox'),
+      key: const Key('/view/medicines'),
       icon: const Icon(FluentIcons.health_solid),
       title: const Text('Medicines'),
       body: const SizedBox.shrink(),
       onTap: () {
-        if (router.location != '/view/checkbox') {
-          router.pushNamed('view_checkbox');
+        if (router.location != '/view/medicines') {
+          router.pushNamed('view_medicine');
         }
       },
     ),
     PaneItem(
-      key: const Key('/view/slider'),
+      key: const Key('/view/appointment'),
       icon: const Icon(FluentIcons.calendar),
       title: const Text('Appointments'),
       body: const SizedBox.shrink(),
       onTap: () {
-        if (router.location != '/view/slider') {
-          router.pushNamed('view_slider');
+        if (router.location != '/view/appointment') {
+          router.pushNamed('view_appointment');
         }
       },
     ),
-    PaneItemHeader(header: const Text('Syncing')),
+    PaneItemHeader(header: const Text('Storage')),
     PaneItem(
-      key: const Key('/view/toggle_switch'),
+      key: const Key('/view/storage'),
       icon: const Icon(FluentIcons.cloud_upload),
       title: const Text('Storage'),
       body: const SizedBox.shrink(),
       onTap: () {
-        if (router.location != '/view/toggle_switch') {
-          router.pushNamed('view_toggle_switch');
+        if (router.location != '/view/storage') {
+          router.pushNamed('view_storage');
         }
       },
     ),
@@ -468,8 +468,8 @@ final router = GoRouter(
         /// /// Input
         /// Buttons
         GoRoute(
-          path: '/view/buttons',
-          name: 'view_buttons',
+          path: '/view/patient',
+          name: 'view_patient',
           builder: (context, state) => DeferredWidget(
             screens.loadLibrary,
             () => screens.ButtonPage(),
@@ -478,8 +478,8 @@ final router = GoRouter(
 
         /// Checkbox
         GoRoute(
-          path: '/view/checkbox',
-          name: 'view_checkbox',
+          path: '/view/medicines',
+          name: 'view_medicine',
           builder: (context, state) => DeferredWidget(
             screens.loadLibrary,
             () => screens.CheckBoxPage(),
@@ -488,8 +488,8 @@ final router = GoRouter(
 
         /// Slider
         GoRoute(
-          path: '/view/slider',
-          name: 'view_slider',
+          path: '/view/appointment',
+          name: 'view_appointment',
           builder: (context, state) => DeferredWidget(
             screens.loadLibrary,
             () => screens.SliderPage(),
@@ -498,8 +498,8 @@ final router = GoRouter(
 
         /// ToggleSwitch
         GoRoute(
-          path: '/view/toggle_switch',
-          name: 'view_toggle_switch',
+          path: '/view/storage',
+          name: 'view_storage',
           builder: (context, state) => DeferredWidget(
             screens.loadLibrary,
             () => screens.ToggleSwitchPage(),

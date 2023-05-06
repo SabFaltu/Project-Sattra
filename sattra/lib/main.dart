@@ -472,7 +472,7 @@ final router = GoRouter(
           name: 'view_patient',
           builder: (context, state) => DeferredWidget(
             screens.loadLibrary,
-            () => screens.ButtonPage(),
+            () => screens.PatientsPage(),
           ),
         ),
 

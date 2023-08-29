@@ -1,3 +1,40 @@
+#+title: Project सत्र -  Dev Branch
+
+[[https://github.com/SabFaltu/Project-Sattra][Visit Main Branch]]
+
+* Overview
+This is the development branch for the Satra medical management application. It is currently in active development and is not recommended for production use.
+
+* Current Condition
+Noone but me works on this project.
+
+The only other functional person is the one who calls the panelists and keeps track of phases.
+
+Every word document was and is mine, hello, panelist who can see this.
+
+Saksham Sharma, 22BIS70051
+
+* Resources
+** Textual Resources
+- [[github:bdlukaa/fluent_ui][Fluent_UI by bdlukaa]]
+- [[https:pub.dev/packages/fluentui_system_icons][fluentui_system_icons by Microsoft]]
+- [[https:docs.flutter.dev/cookbook/navigation/navigation-basics][Basic Page navigation]]
+** Video Resources
+- [[https:youtu.be/nyvwx7o277U][Routing and Navigation in Flutter]]
+- [[https:youtu.be/Mt41FpSS-Vo][File Structure Layout]]
+
+** Fonts and Icons
+*** Fonts
+- [[https:fonts.google.com/specimen/Kalam?subset=devanagari&noto.script=Deva][Kalam, by Indian Type Foundry]]
+- Seoge UI, by Simon Daniels
+
+**** Setting the font in Flutter
+- [[https:stackoverflow.com/questions/50081213/how-to-change-the-default-font-in-flutter][Stackoverflow, Changing default font in Flutter]]
+- [[https:stackoverflow.com/questions/71182566/how-to-set-different-fonts-for-different-locales-in-flutter][Stackoverflow, Different fonts for different locales]]
+*** Icons
+- [[https:learn.microsoft.com/en-us/windows/apps/design/style/icons][Microsoft Icons, Windows 10]]
+** Packages
+- [[https:api.flutter.dev/flutter/material/FlutterLogo-class.html][FlutterLogo class]] - Replace with your own icon
 #+title: Project सत्त्र
 #+TITLE: Satra - Medical Management Application
 

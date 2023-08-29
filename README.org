@@ -35,3 +35,39 @@ Saksham Sharma, 22BIS70051
 - [[https:learn.microsoft.com/en-us/windows/apps/design/style/icons][Microsoft Icons, Windows 10]]
 ** Packages
 - [[https:api.flutter.dev/flutter/material/FlutterLogo-class.html][FlutterLogo class]] - Replace with your own icon
+#+title: Project सत्त्र
+#+TITLE: Satra - Medical Management Application
+
+* Overview
+Satra is a medical management application built using the Flutter framework. It is designed to help clinics manage their patients, medication stocks, and appointments more efficiently.
+
+* Features
+- Add, edit, and delete patient records
+- Manage medication stocks and update inventory
+- Assign patients to staff members and manage staff records
+- Schedule and manage appointments with patients
+- Generate patient data in PDF format
+
+* Getting Started
+To get started, clone the repository and run the following command:
+
+#+begin_src bash
+flutter run
+#+end_src
+
+* Group Members
+| Members |
+| Ashim   |
+| Aditi   |
+| Bhargav |
+| Dheraj  |
+| Saksham |
+
+
+
+
+* Contributing
+Contributions are always welcome! If you have any suggestions or would like to contribute to the project, please feel free to open a pull request or issue.
+
+* License
+This project is licensed under the MIT License - see the LICENSE.md file for details.

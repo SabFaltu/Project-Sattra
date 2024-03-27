@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(PatientDetailsForm());
+  runApp(const PatientDetailsForm());
 }
 
 class PatientDetailsForm extends StatelessWidget {
+  const PatientDetailsForm({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,7 +16,7 @@ class PatientDetailsForm extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Patient Details Form'),
+          title: const Text('Patient Details Form'),
         ),
         body: Container(
           color: Colors.white,
@@ -30,14 +32,14 @@ class PatientDetailsForm extends StatelessWidget {
                     children: [
                       Text(
                         DateTime.now().toString(),
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Row(
                     children: [
                       Image.asset(
@@ -47,43 +49,43 @@ class PatientDetailsForm extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Expanded(
                     child: SingleChildScrollView(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             'Personal Information',
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold),
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           TextFormField(
-                            decoration: InputDecoration(labelText: 'Name'),
+                            decoration: const InputDecoration(labelText: 'Name'),
                           ),
                           TextFormField(
-                            decoration: InputDecoration(labelText: 'Age'),
+                            decoration: const InputDecoration(labelText: 'Age'),
                           ),
                           TextFormField(
-                            decoration: InputDecoration(labelText: 'Sex'),
+                            decoration: const InputDecoration(labelText: 'Sex'),
                           ),
                           TextFormField(
-                            decoration: InputDecoration(labelText: 'Weight'),
+                            decoration: const InputDecoration(labelText: 'Weight'),
                           ),
                           TextFormField(
-                            decoration: InputDecoration(labelText: 'Height'),
+                            decoration: const InputDecoration(labelText: 'Height'),
                           ),
                           TextFormField(
-                            decoration: InputDecoration(labelText: 'Email'),
+                            decoration: const InputDecoration(labelText: 'Email'),
                           ),
                           TextFormField(
-                            decoration: InputDecoration(labelText: 'Phone No'),
+                            decoration: const InputDecoration(labelText: 'Phone No'),
                           ),
                           TextFormField(
-                            decoration: InputDecoration(labelText: 'Address'),
+                            decoration: const InputDecoration(labelText: 'Address'),
                           ),
-                          SizedBox(height: 20),
+                          const SizedBox(height: 20),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -91,42 +93,42 @@ class PatientDetailsForm extends StatelessWidget {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
+                                    const Text(
                                       'Illness and Medication',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.bold),
                                     ),
-                                    SizedBox(height: 10),
+                                    const SizedBox(height: 10),
                                     TextFormField(
                                       decoration:
-                                          InputDecoration(labelText: 'Illness'),
+                                          const InputDecoration(labelText: 'Illness'),
                                     ),
                                     TextFormField(
-                                      decoration: InputDecoration(
+                                      decoration: const InputDecoration(
                                           labelText: 'Previous Medications'),
                                     ),
                                   ],
                                 ),
                               ),
-                              SizedBox(width: 20),
+                              const SizedBox(width: 20),
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
+                                    const Text(
                                       'Precautions and Instructions',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.bold),
                                     ),
-                                    SizedBox(height: 10),
+                                    const SizedBox(height: 10),
                                     TextFormField(
-                                      decoration: InputDecoration(
+                                      decoration: const InputDecoration(
                                           labelText: 'Precautions'),
                                     ),
                                     TextFormField(
-                                      decoration: InputDecoration(
+                                      decoration: const InputDecoration(
                                           labelText: 'Instructions'),
                                     ),
                                   ],
@@ -134,7 +136,7 @@ class PatientDetailsForm extends StatelessWidget {
                               ),
                             ],
                           ),
-                          SizedBox(height: 40),
+                          const SizedBox(height: 40),
                           Center(
                             child: ElevatedButton(
                               onPressed: () {
@@ -143,25 +145,25 @@ class PatientDetailsForm extends StatelessWidget {
                                   context: context,
                                   builder: (context) {
                                     return AlertDialog(
-                                      title: Text('Form Downloaded'),
-                                      content: Text(
+                                      title: const Text('Form Downloaded'),
+                                      content: const Text(
                                           'Thank you for submitting the form.'),
                                       actions: [
                                         TextButton(
                                           onPressed: () {
                                             Navigator.of(context).pop();
                                           },
-                                          child: Text('Close'),
+                                          child: const Text('Close'),
                                         ),
                                       ],
                                     );
                                   },
                                 );
                               },
-                              child: Text('Download Form'),
+                              child: const Text('Download Form'),
                             ),
                           ),
-                          SizedBox(height: 20),
+                          const SizedBox(height: 20),
                         ],
                       ),
                     ),

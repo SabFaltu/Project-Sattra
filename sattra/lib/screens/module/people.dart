@@ -46,9 +46,9 @@ class _PatientWidgetState extends State<PatientWidget> {
                                   fit: BoxFit.cover,
                                 ),
                               ),
-                              Expanded(
+                              const Expanded(
                                 child: Padding(
-                                  padding: const EdgeInsets.only(left: 8.0),
+                                  padding: EdgeInsets.only(left: 8.0),
                                   child: Text(
                                     'Devinder\nSingh',
                                     textAlign: TextAlign.start,
@@ -59,12 +59,12 @@ class _PatientWidgetState extends State<PatientWidget> {
                               ),
                             ],
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 8.0),
+                          const Padding(
+                            padding: EdgeInsets.only(top: 8.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const <Widget>[
+                              children: <Widget>[
                                 Text.rich(
                                   TextSpan(
                                     children: [

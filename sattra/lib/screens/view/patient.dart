@@ -60,7 +60,7 @@ class _PatientsPageState extends State<PatientsPage> with PageMixin {
     int crossAxisCounted = (screenWidth ~/ 320);
 
     // Adjust childAspectRatio based on your design needs
-    double childAspectRatio = 0.85; // Adjust this value as needed
+    // double childAspectRatio = 0.85; // Adjust this value as needed
 
     return ScaffoldPage.scrollable(
       header: PageHeader(

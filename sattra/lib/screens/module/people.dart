@@ -46,9 +46,15 @@ class _PatientWidgetState extends State<PatientWidget> {
                                   fit: BoxFit.cover,
                                 ),
                               ),
+<<<<<<< HEAD
                               Expanded(
                                 child: Padding(
                                   padding: const EdgeInsets.only(left: 8.0),
+=======
+                              const Expanded(
+                                child: Padding(
+                                  padding: EdgeInsets.only(left: 8.0),
+>>>>>>> parent of e315cc1 (RandomChanges)
                                   child: Text(
                                     'Devinder\nSingh',
                                     textAlign: TextAlign.start,
@@ -59,12 +65,21 @@ class _PatientWidgetState extends State<PatientWidget> {
                               ),
                             ],
                           ),
+<<<<<<< HEAD
                           Padding(
                             padding: const EdgeInsets.only(top: 8.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: const <Widget>[
+=======
+                          const Padding(
+                            padding: EdgeInsets.only(top: 8.0),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+>>>>>>> parent of e315cc1 (RandomChanges)
                                 Text.rich(
                                   TextSpan(
                                     children: [

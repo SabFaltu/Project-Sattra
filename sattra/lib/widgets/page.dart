@@ -5,7 +5,7 @@ import '/widgets/deferred_widget.dart';
 import 'package:fluent_ui/fluent_ui.dart';
 
 mixin PageMixin {
-  Widget description({required Widget content}) {
+  Widget description(required Text content, {required Widget content}) {
     return Builder(builder: (context) {
       return Padding(
         padding: const EdgeInsetsDirectional.only(bottom: 4.0),

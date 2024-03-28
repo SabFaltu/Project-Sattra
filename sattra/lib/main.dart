@@ -482,7 +482,7 @@ final router = GoRouter(
           name: 'view_medicine',
           builder: (context, state) => DeferredWidget(
             screens.loadLibrary,
-            () => screens.CheckBoxPage(),
+            () => screens.MedicationPage(),
           ),
         ),
 

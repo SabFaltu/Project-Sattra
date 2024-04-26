@@ -1,0 +1,41 @@
+#+TITLE: Testing Data
+#+Author: Skshm
+** Patient Info
+
+| Info             | Type                           |
+| ---------------- | ------------------------------ |
+| Name             | text                           |
+| Age              | Number                         |
+| Sex              | toggle                         |
+| Weight           | Number                         |
+| Address          | text                           |
+| Chief Complaints | text                           |
+-----------------------------------------------------
+| Symptom          | Level                          |
+| ------------     | ------------------------------ |
+| sleep            | normal, disrupted, heavy       |
+| bowel            | normal, constipation, frequent |
+| Appetite         | normal, disrupted, heavy       |
+| Digestion        | normal, poor, heavy            |
+| stress           | normal, heavy, poor            |
+| Micturition      | normal, frequent, low          |
+| Tolerance        | normal, hot, cold              |
+| Mensturation     | normal, Scanty, heavy          |
+| LMP              | Date                           |
+
+** Medications
+
+| Med                   | Dose                 |
+| --------------------- | -------------------- |
+| Adhya Tablet          | OD, BD, Hs, TDS, EOD |
+| Awipatti Tablet       | OD, BD, Hs, TDS, EOD |
+| Madhuparni Tablet     | OD, BD, Hs, TDS, EOD |
+| Lekhniya Tablet       | OD, BD, Hs, TDS, EOD |
+| Vrahkarni Tablet      | OD, BD, Hs, TDS, EOD |
+| Rakta Shodak Tablet   | OD, BD, Hs, TDS, EOD |
+| Medhya Rasayan Tablet | OD, BD, Hs, TDS, EOD |
+| Calvera Tablet        | OD, BD, Hs, TDS, EOD |
+| Punarnava Capsule     | OD, BD, Hs, TDS, EOD |
+| Maarkhav Capsule      | OD, BD, Hs, TDS, EOD |
+| Cystolve Tablet       | OD, BD, Hs, TDS, EOD |
+| Cystolve Capsule      | OD, BD, Hs, TDS, EOD |

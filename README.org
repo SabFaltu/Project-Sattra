@@ -1,0 +1,54 @@
+#+title: Project सत्र -  Dev Branch
+
+* Overview
+This is the development branch for the Satra medical management application. It is currently in active development and is not recommended for production use.
+
+* Resources
+** Textual Resources
+- [[github:bdlukaa/fluent_ui][Fluent_UI by bdlukaa]]
+- [[https:pub.dev/packages/fluentui_system_icons][fluentui_system_icons by Microsoft]]
+- [[https:docs.flutter.dev/cookbook/navigation/navigation-basics][Basic Page navigation]]
+** Video Resources
+- [[https:youtu.be/nyvwx7o277U][Routing and Navigation in Flutter]]
+- [[https:youtu.be/Mt41FpSS-Vo][File Structure Layout]]
+
+** Fonts and Icons
+*** Fonts
+- [[https:fonts.google.com/specimen/Kalam?subset=devanagari&noto.script=Deva][Kalam, by Indian Type Foundry]]
+- Seoge UI, by Simon Daniels
+
+**** Setting the font in Flutter
+- [[https:stackoverflow.com/questions/50081213/how-to-change-the-default-font-in-flutter][Stackoverflow, Changing default font in Flutter]]
+- [[https:stackoverflow.com/questions/71182566/how-to-set-different-fonts-for-different-locales-in-flutter][Stackoverflow, Different fonts for different locales]]
+*** Icons
+- [[https:learn.microsoft.com/en-us/windows/apps/design/style/icons][Microsoft Icons, Windows 10]]
+** Packages
+- [[https:api.flutter.dev/flutter/material/FlutterLogo-class.html][FlutterLogo class]] - Replace with your own icon
+
+
+* Features
+- Add, edit, and delete patient records
+- Manage medication stocks and update inventory
+- Assign patients to staff members and manage staff records
+- Schedule and manage appointments with patients
+- Generate patient data in PDF format
+
+* Getting Started
+To get started, clone the repository and run the following command:
+
+#+begin_src bash
+flutter run
+#+end_src
+
+* Group Members
+| Members |
+| Brian   |
+| Saksham |
+| Brian   |
+
+
+* Contributing
+Contributions are always welcome! If you have any suggestions or would like to contribute to the project, please feel free to open a pull request or issue.
+
+* License
+This project is licensed under the MIT License - see the LICENSE.md file for details.

@@ -27,11 +27,11 @@ This is the development branch for the Satra medical management application. It 
 
 
 * Features
-- Add, edit, and delete patient records
-- Manage medication stocks and update inventory
-- Assign patients to staff members and manage staff records
-- Schedule and manage appointments with patients
-- Generate patient data in PDF format
+- [ ] Add, edit, and delete patient records
+- [ ] Manage medication stocks and update inventory
+- [ ] Assign patients to staff members and manage staff records
+- [ ] Schedule and manage appointments with patients
+- [X] Generate patient data in PDF format
 
 * Getting Started
 To get started, clone the repository and run the following command:
@@ -39,16 +39,3 @@ To get started, clone the repository and run the following command:
 #+begin_src bash
 flutter run
 #+end_src
-
-* Group Members
-| Members |
-| Brian   |
-| Saksham |
-| Brian   |
-
-
-* Contributing
-Contributions are always welcome! If you have any suggestions or would like to contribute to the project, please feel free to open a pull request or issue.
-
-* License
-This project is licensed under the MIT License - see the LICENSE.md file for details.

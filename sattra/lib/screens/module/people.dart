@@ -1,24 +1,33 @@
-import 'package:fluent_ui/fluent_ui.dart';
+import 'package:flutter/material.dart';
 
-class PatientWidget extends StatefulWidget {
-  const PatientWidget({super.key});
+class PatientWidget extends StatelessWidget {
+  final String name;
+  final String imageUrl;
+  final String gender;
+  final int age;
 
-  @override
-  _PatientWidgetState createState() => _PatientWidgetState();
-}
 
-class _PatientWidgetState extends State<PatientWidget> {
+  const PatientWidget({
+    required this.name,
+    required this.imageUrl,
+    required this.gender,
+    required this.age,
+    Key? key,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    assert(debugCheckHasFluentTheme(context));
-    final theme = FluentTheme.of(context);
-
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: SafeArea(
+    return Card(
+        child: AnimatedContainer(
+      duration: const Duration(milliseconds: 100),
+      curve: Curves.easeIn,
+      width: 350, // Consider making this dynamic if needed
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
         child: Column(
-          mainAxisSize: MainAxisSize.max,
-          children: [
+          mainAxisSize: MainAxisSize.min, // Changed to min
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
             Row(
               mainAxisSize: MainAxisSize.max,
               children: <Widget>[
@@ -35,32 +44,33 @@ class _PatientWidgetState extends State<PatientWidget> {
                         children: <Widget>[
                           Row(
                             mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start, // Added to align items at the start
+                            crossAxisAlignment: CrossAxisAlignment
+                                .start, // Added to align items at the start
                             children: [
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(6),
                                 child: Image.network(
-                                  'https://images.unsplash.com/photo-1681668385364-af51bce51c18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+                                  imageUrl,
                                   width: 90,
                                   height: 90,
                                   fit: BoxFit.cover,
                                 ),
                               ),
-                              const Expanded(
+                              Expanded(
                                 child: Padding(
-                                  padding: EdgeInsets.only(left: 8.0),
+                                  padding: const EdgeInsets.only(left: 8.0),
                                   child: Text(
-                                    'Devinder\nSingh',
+                                    name,
                                     textAlign: TextAlign.start,
                                     maxLines: 2,
-                                    style: TextStyle(fontSize: 28),
+                                    style: const TextStyle(fontSize: 28),
                                   ),
                                 ),
                               ),
                             ],
                           ),
-                          const Padding(
-                            padding: EdgeInsets.only(top: 8.0),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 8.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -70,20 +80,18 @@ class _PatientWidgetState extends State<PatientWidget> {
                                     children: [
                                       TextSpan(
                                         text: 'Age: ',
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                           fontWeight: FontWeight.bold,
                                           // color: Colors.black,
                                           fontSize: 17,
                                         ),
                                       ),
                                       TextSpan(
-                                        text: '42',
-                                        style: TextStyle(
-                                          // color: Colors.black,
-                                        ),
+                                        text: '$age',
+                                        style: TextStyle(fontSize: 15),
                                       )
                                     ],
-                                    style: TextStyle(fontSize: 15),
+                                    style: const TextStyle(fontSize: 15),
                                   ),
                                 ),
                                 Text.rich(
@@ -91,19 +99,19 @@ class _PatientWidgetState extends State<PatientWidget> {
                                     children: [
                                       TextSpan(
                                         text: 'Gender: ',
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
                                       TextSpan(
-                                        text: 'Male',
+                                        text: '$gender',
                                         style: TextStyle(fontSize: 15),
                                       )
                                     ],
-                                    style: TextStyle(fontSize: 17),
+                                    style: const TextStyle(fontSize: 17),
                                   ),
                                 ),
-                                Text.rich(
+                                const Text.rich(
                                   TextSpan(
                                     children: [
                                       TextSpan(
@@ -133,6 +141,6 @@ class _PatientWidgetState extends State<PatientWidget> {
           ],
         ),
       ),
-    );
+    ));
   }
 }

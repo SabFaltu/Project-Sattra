@@ -6,7 +6,6 @@ import 'package:flutter_acrylic/flutter_acrylic.dart' as flutter_acrylic;
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:system_theme/system_theme.dart';
-import 'package:url_launcher/link.dart';
 import 'package:window_manager/window_manager.dart';
 
 import 'routes/views.dart' deferred as views;
@@ -218,7 +217,6 @@ class _MyHomePageState extends State<MyHomePage> with WindowListener {
         }
       },
     ),
-
   ];
 
   @override
@@ -580,6 +578,7 @@ final router = GoRouter(navigatorKey: rootNavigatorKey, routes: [
           () => views.SliderPage(),
         ),
       ),
+
       /// NavigationView
       GoRoute(
         path: '/views/storage',

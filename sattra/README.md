@@ -8,5 +8,3 @@ To run this app, run `flutter create .` in the terminal to generate the platform
 
 * App launcher icon
   https://mobile.twitter.com/fluentui/photo
-
-

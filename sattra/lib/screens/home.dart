@@ -1,5 +1,4 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:url_launcher/link.dart';
 
 import '../widgets/material_equivalents.dart';
 import '../widgets/page.dart';
@@ -22,8 +21,8 @@ class _HomePageState extends State<HomePage> with PageMixin {
     final theme = FluentTheme.of(context);
 
     return ScaffoldPage.scrollable(
-      header: PageHeader(
-        title: const Text('Welcome to Sattra'),
+      header: const PageHeader(
+        title: Text('Welcome to Sattra'),
 //        commandBar: Row(mainAxisAlignment: MainAxisAlignment.end, children: []),
       ),
       children: [
